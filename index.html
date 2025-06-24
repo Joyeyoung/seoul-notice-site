@@ -51,7 +51,7 @@
 
     <script>
       async function loadNotices() {
-        const res = await fetch('https://raw.githubusercontent.com/사용자명/seoul-notice-crawler/main/notices.json');
+        const res = await fetch('https://raw.githubusercontent.com/Joyeyoung/seoul-notice-site/refs/heads/main/notices.json');
         const data = await res.json();
         const container = document.querySelector(".grid");
         container.innerHTML = data.map(n => `
